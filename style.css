@@ -1,0 +1,40 @@
+body {
+  background: gainsboro;
+}
+
+h1 {
+  color: darkslategrey;
+}
+
+table {
+  overflow-y: scroll;
+  position: static;
+  text-align: left;
+}
+
+tbody td:first-child::before {
+    content: "<";
+}
+
+tbody td:first-child::after {
+    content: ">";
+}
+
+thead th {
+  background: darkslategray;
+  color: #fff;
+  font-family: corbel;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 33.3%;
+}
+
+tbody {
+    font-family: monospace;
+}
+
+#css {
+    margin-top: 100px;
+}
