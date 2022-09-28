@@ -9,7 +9,7 @@ h1 {
 }
 
 #html {
-  width: 4%;
+  display: inline-block;
   border: 2px solid rgb(255, 98, 0);
 }
 
@@ -20,14 +20,14 @@ h1 {
 }
 
 #element-table {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-#element-table-body td:first-child::before {
+#element-table-body td a:first-child::before {
   content: "<";
 }
 
-#element-table-body td:first-child::after {
+#element-table-body td a:first-child::after {
   content: ">";
 }
 
@@ -51,7 +51,7 @@ tbody td {
 }
 
 #css {
-  margin-top: 100px;
-  width: 2.5%;
+  margin-top: 50px;
+  display: inline-block;
   border: 2px solid rgb(173, 72, 219);
 }
