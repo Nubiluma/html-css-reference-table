@@ -3,21 +3,32 @@ body {
 }
 
 h1 {
-  color: darkslategrey;
+  text-decoration: underline;
+  padding-bottom: 20px;
+  font-size: 230%;
 }
 
-table {
+#html {
+  width: 4%;
+  border: 2px solid rgb(255, 98, 0);
+}
+
+.table {
   overflow-y: scroll;
   position: static;
   text-align: left;
 }
 
-tbody td:first-child::before {
-    content: "<";
+#element-table {
+  padding-bottom: 50px;
 }
 
-tbody td:first-child::after {
-    content: ">";
+#element-table-body td:first-child::before {
+  content: "<";
+}
+
+#element-table-body td:first-child::after {
+  content: ">";
 }
 
 thead th {
@@ -32,9 +43,15 @@ thead th {
 }
 
 tbody {
-    font-family: monospace;
+  font-family: monospace;
+}
+
+tbody td {
+  border-bottom: 1px solid black;
 }
 
 #css {
-    margin-top: 100px;
+  margin-top: 100px;
+  width: 2.5%;
+  border: 2px solid rgb(173, 72, 219);
 }
