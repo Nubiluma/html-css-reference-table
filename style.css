@@ -13,21 +13,22 @@ h1 {
   border: 2px solid rgb(255, 98, 0);
 }
 
-.table {
-  overflow-y: scroll;
+.tables {
   position: static;
   text-align: left;
+  overflow-y: scroll;
+  overflow-x: scroll;
 }
 
 #element-table {
   margin-bottom: 50px;
 }
 
-#element-table-body td a:first-child::before {
+.element-table-body td a:first-child::before {
   content: "<";
 }
 
-#element-table-body td a:first-child::after {
+.element-table-body td a:first-child::after {
   content: ">";
 }
 
@@ -39,7 +40,11 @@ thead th {
   letter-spacing: 2px;
   padding-left: 2px;
   padding-right: 2px;
-  width: 33.3%;
+  min-width: 200px;
+}
+
+thead tr th:last-child {
+  width: 100em;
 }
 
 tbody {
